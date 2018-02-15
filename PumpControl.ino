@@ -13,9 +13,9 @@
 #define ANINPN A0
 #define MESVPN 13
 // Button and rotation encoder
-#define PN0 2
+#define PN0 2 
 #define PN1 4
-#define PN2 3
+#define PN2 3 // This is the MuFuK
 
 LiquidCrystal lcd(RS, EN, D4, D5, D6, D7);
 
