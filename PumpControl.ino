@@ -198,6 +198,23 @@ void loop() {
     }
   }
 
+<<<<<<< HEAD
+=======
+  // This is where the MuFuK (MultiFunctionalKnob) will change the menu to
+  // adjust settings with the MuC (MultiCrementor) like threshold, watering time
+  // and the interval between two watering attempts
+  if (pushed){
+    digitalWrite(LEDPN, HIGH);
+    pushed = false;
+    lastPushedCnt = 0;
+  }else{
+    lastPushedCnt++;
+    if (lastPushedCnt * dt >= brightTime){
+      digitalWrite(LEDPN, LOW);
+    }
+  }
+
+>>>>>>> 39c0ed92ec42842858100bfce01c3920f41b8df4
   delay(dt);
 }
 
